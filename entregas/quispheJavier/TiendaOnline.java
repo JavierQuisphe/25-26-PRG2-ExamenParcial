@@ -32,4 +32,31 @@ class TiendaOnline {
         this.stock = 0;
     }
 }
+    class Cliente {
+    String nombreCliente;
+    String email;
+    String direccion;
+
+    public Cliente(String nombreCliente, String email, String direccion){
+        assert nombreCliente != null;
+        assert email != null;
+        assert direccion != null;
+
+        this.nombreCliente = nombreCliente;
+        this.email = email;
+        this.direccion = direccion;
+    }
+
+    public Cliente(Cliente cliente){
+        this.nombreCliente = cliente.nombreCliente;
+        this.email = cliente.email;
+        this.direccion = cliente.direccion;
+    }
+
+    public Cliente(){
+        this.nombreCliente = "";
+        this.email = "";
+        this.direccion = "";
+    }
+}
 }
